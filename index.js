@@ -5,6 +5,7 @@ async function main() {
   data.forEach(async ID => {
     let newData = await fetch("https://www.itemsatis.com/api/moveUpPost", { headers: { "content-type": "application/x-www-form-urlencoded", }, body: `Id=${ID}&token=${token}`, method: "POST" }).then(res => res.json()).catch(err => {
       console.log(`>> Error: An error occured while fetching data from the API. Please try again later.`);
+      return;
     });
     if (newData.success) {
       console.log(`İlan ID: ${ID} ${newData.message.replace(/<\/?b>/g, " ").replace(/<br>/g, " ")}`);
