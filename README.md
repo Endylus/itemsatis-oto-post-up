@@ -1,5 +1,6 @@
 # itemsatis-oto-post-up
-Itemsatış'daki ilanlarınızı otomatik olarak yukarı taşımaya yarıyor.
+Itemsatış'daki ilanlarınızı otomatik olarak yukarı taşımaya yarıyor.;
+
 Not: Bu script nedeniyle ortaya çıkabilecek sorunlardan sorumluluk kabul etmiyorum.
 
 Siteden token alma:
